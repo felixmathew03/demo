@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710be"
+  },
+  "name": "Abey",
+  "rno": "101",
+  "marks": {
+    "physics": 100,
+    "chemistry": 98,
+    "maths": 91
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710bf"
+  },
+  "name": "Arun",
+  "rno": "102",
+  "marks": {
+    "physics": 95,
+    "chemistry": 93,
+    "maths": 90
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c0"
+  },
+  "name": "Athul",
+  "rno": "103",
+  "marks": {
+    "physics": 70,
+    "chemistry": 78,
+    "maths": 91
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c1"
+  },
+  "name": "Akshara",
+  "rno": "104",
+  "marks": {
+    "physics": 89,
+    "chemistry": 89,
+    "maths": 90
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c2"
+  },
+  "name": "Aravindh",
+  "rno": "105",
+  "marks": {
+    "physics": 55,
+    "chemistry": 64,
+    "maths": 48
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c3"
+  },
+  "name": "Bindhu",
+  "rno": "106",
+  "marks": {
+    "physics": 78,
+    "chemistry": 86,
+    "maths": 77
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c4"
+  },
+  "name": "Celine",
+  "rno": "107",
+  "marks": {
+    "physics": 88,
+    "chemistry": 75,
+    "maths": 100
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c5"
+  },
+  "name": "Diya",
+  "rno": "108",
+  "marks": {
+    "physics": 77,
+    "chemistry": 55,
+    "maths": 96
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c6"
+  },
+  "name": "Elizabeth",
+  "rno": "109",
+  "marks": {
+    "physics": 100,
+    "chemistry": 100,
+    "maths": 100
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd23921a6e32ee502710c7"
+  },
+  "name": "Feran",
+  "rno": "110",
+  "marks": {
+    "physics": 45,
+    "chemistry": 76,
+    "maths": 88
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710c8"
+  },
+  "name": "Olivia",
+  "rno": "111",
+  "marks": {
+    "physics": 60,
+    "chemistry": 98,
+    "maths": 81
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710c9"
+  },
+  "name": "Raman",
+  "rno": "112",
+  "marks": {
+    "physics": 95,
+    "chemistry": 73,
+    "maths": 96
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710ca"
+  },
+  "name": "Jadhu",
+  "rno": "113",
+  "marks": {
+    "physics": 70,
+    "chemistry": 58,
+    "maths": 81
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710cb"
+  },
+  "name": "Libin",
+  "rno": "114",
+  "marks": {
+    "physics": 69,
+    "chemistry": 80,
+    "maths": 90
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710cc"
+  },
+  "name": "Govindh",
+  "rno": "115",
+  "marks": {
+    "physics": 55,
+    "chemistry": 44,
+    "maths": 48
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710cd"
+  },
+  "name": "Geetha",
+  "rno": "116",
+  "marks": {
+    "physics": 38,
+    "chemistry": 86,
+    "maths": 77
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710ce"
+  },
+  "name": "Nandhu",
+  "rno": "117",
+  "marks": {
+    "physics": 88,
+    "chemistry": 95,
+    "maths": 100
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710cf"
+  },
+  "name": "Maria",
+  "rno": "118",
+  "marks": {
+    "physics": 77,
+    "chemistry": 75,
+    "maths": 96
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710d0"
+  },
+  "name": "Parvathi",
+  "rno": "119",
+  "marks": {
+    "physics": 60,
+    "chemistry": 80,
+    "maths": 100
+  }
+},
+{
+  "_id": {
+    "$oid": "66cd25691a6e32ee502710d1"
+  },
+  "name": "Sandy",
+  "rno": "120",
+  "marks": {
+    "physics": 75,
+    "chemistry": 66,
+    "maths": 88
+  }
+}]
