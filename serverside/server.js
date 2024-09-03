@@ -4,11 +4,11 @@ const url=require("url")
 const queryString=require("querystring")
 const {MongoClient}=require("mongodb")
 //connect database
-const client=new MongoClient()
+const client=new MongoClient("mongodb://127.0.0.1:27017/")
 
 const app=http.createServer((req,res)=>{
     //create database
-    const db=client.db("Batch")
+    const db=client.db("BloodDonors")
     //create collection
     const collection=db.collection("donors")
     const path=url.parse(req.url)
