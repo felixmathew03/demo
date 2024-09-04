@@ -109,6 +109,9 @@
         input[type="email"]:focus,input[type="text"]:focus{
             outline: none;
         }
+        .content{
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -125,19 +128,8 @@
             </button>
         </a>
     </div>
-    <div class="container">
-        <div class="content">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <input type="text" name="pnp" id="pno" placeholder="Phone no.">
-            <input type="text" name="bgrp" id="bgrp" placeholder="Blood Group">
-            <input type="text" name="gender" id="gender" placeholder="Gender">
-            <div class="butn">
-                <button class="edit" > Edit</button>
-                <button class="save" >Save</button>
-                <button class="delete" >Delete</button>
-            </div>
-        </div>    
+    <div class="container" id="main">
+        
     </div>
     <script src="../js/index.js"></script>
 </body>
