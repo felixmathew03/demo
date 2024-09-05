@@ -76,6 +76,33 @@ const app=http.createServer(async(req,res)=>{
             })
         })
     }
+    if(req.method=="PUT" && path.pathname=="/update"){
+        console.log("reached to update route");
+        let body="";
+        req.on("data",(chunks)=>{
+            body+=chunks.toString();
+            console.log(body);
+        });
+        req.on("end",async()=>{
+            let data=JSON.parse(body)
+            console.log(data);
+            let _id=new ObjectId(data.id);
+            let updateData={
+                name:data.name,
+                email:data.email,
+                phone:data.pno,
+                bgrop:data.bgrp,
+                gender:data.gender
+            }
+            await collection.updateOne({_id},{$set:updateData}).then(()=>{
+                res.writeHead(200,{"Content-Type":"text/plain"});
+                res.end("success");
+            }).catch(()=>{
+                res.writeHead(400,{"Content-Type":"text/plain"});
+                res.end("fail");
+            })
+        });
+    }
 });
 
 client.connect().then(()=>{

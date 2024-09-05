@@ -37,10 +37,30 @@ async function handleEdit(id) {
 }
 
 async function handleSave(id) {
-    let name =document.getElementById(`name-${id}`);
-    let email =document.getElementById(`email-${id}`);
-    let pno =document.getElementById(`pno-${id}`);
-    let bgrp =document.getElementById(`bgrp-${id}`);
+    let name =document.getElementById(`name-${id}`).value;
+    let email =document.getElementById(`email-${id}`).value;
+    let pno =document.getElementById(`pno-${id}`).value;
+    let bgrp =document.getElementById(`bgrp-${id}`).value;
+    let gender=document.getElementById(`gender-${id}`).value;
+    console.log(name,email,pno,bgrp,gender);
+    let data={id,name,email,pno,bgrp,gender};
+    console.log(data);
+    const jsonData=JSON.stringify(data);
+    const res=await fetch("http://localhost:3000/update",{
+        "method":"PUT",
+        "Content-Type":"text/json",
+        "body":jsonData
+    });
+    console.log(res);
+    const result=await res.text();
+    console.log(result);
+    if(result=="success"){
+        alert("Updated Successfully!!");
+        getdonors();
+    }
+    else{
+        alert("Updation Failed")
+    }
 }
 
 async function handleDelete(id){
