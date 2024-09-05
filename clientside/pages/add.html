@@ -6,7 +6,7 @@
     <title>Add Donor</title>
     <style>
         body{
-            background-color: rgb(104, 238, 238);
+            background: linear-gradient(180deg, rgb(255, 50, 39) 1%, rgb(247, 82, 82) 34%, rgba(251,112,110,1) 71%, rgb(245, 159, 159) 99%);
         }
         .container{
             width: 100%;
@@ -18,7 +18,7 @@
         .content{
             width: 50%;
             border-radius: 15px;
-            background: linear-gradient(45deg, rgb(136, 147, 250) 0%, rgb(177, 184, 245) 35%, rgb(202, 162, 248) 65%, rgb(198, 142, 248) 100%);
+            background: linear-gradient(45deg, rgb(125, 69, 255) 0%, rgb(167, 122, 252) 35%, rgb(156, 137, 241) 65%, rgb(203, 79, 252) 100%);
             padding: 2% 1% ;
             box-shadow: 1px 4px 8px 2px rgba(9, 30, 66, 0.25), 1px 0px 0px 1px rgba(9, 30, 66, 0.08);
         }
@@ -31,7 +31,9 @@
         .content table{ 
             width: 100%;
         }
-        
+        .content h3{
+            color: #faf8f8;
+        }
         button{
             padding: 8px 16px;
             font-size: 16px;
@@ -56,8 +58,8 @@
             outline: none;
         }
         button[type="submit"]:hover{
-            background-color: rgb(76, 15, 126);
-            width: 60%;
+            background-color: rgb(248, 19, 19);
+            
         }
     </style>
 </head>
@@ -70,22 +72,22 @@
                     <tr>
                         <td><h3>Name </h3></td>
                         <td>:</td>
-                        <td colspan="3"><input type="text" name="name" id="name" placeholder="Name"></td>
+                        <td colspan="3" align="center"><input type="text" name="name" id="name" placeholder="Name"></td>
                     </tr>
                     <tr>
                         <td><h3>Email</h3></td>
                         <td>:</td>
-                        <td colspan="3"><input type="email" name="email" id="email" placeholder="Email"></td>
+                        <td colspan="3" align="center"><input type="email" name="email" id="email" placeholder="Email"></td>
                     </tr>
                     <tr>
                         <td><h3>Phone</h3></td>
                         <td>:</td>
-                        <td colspan="3"><input type="text" name="phone" id="phone" placeholder="Phone"></td>
+                        <td colspan="3" align="center"><input type="text" name="phone" id="phone" placeholder="Phone"></td>
                     </tr>
                     <tr>
                         <td><h3>Blood Group</h3></td>
                         <td>:</td>
-                        <td colspan="3"><input type="text" name="bgrop" id="bgrop" placeholder="Blood Group"></td>
+                        <td colspan="3" align="center"><input type="text" name="bgrop" id="bgrop" placeholder="Blood Group"></td>
                     </tr>
                     <tr>
                         <td>

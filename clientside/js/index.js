@@ -5,14 +5,14 @@ async function getdonors() {
     data.map((dt)=>{
         str+=`
         <div class="content" >
-            <input type="text" value=${dt.name} disabled=true name="name" id="name" placeholder="Name">
-            <input type="email" value=${dt.email}  disabled=true name="email" id="email" placeholder="Email">
-            <input type="text" value=${dt.phone}  disabled=true name="pnp" id="pno" placeholder="Phone no.">
-            <input type="text"  value=${dt.bgrop}  disabled=true name="bgrp" id="bgrp" placeholder="Blood Group">
-            <input type="text" value=${dt.gender}  disabled=true name="gender" id="gender" placeholder="Gender">
+            <input type="text" value=${dt.name} disabled=true name="name" id="name-${dt._id}" placeholder="Name">
+            <input type="email" value=${dt.email}  disabled=true name="email" id="email-${dt._id}" placeholder="Email">
+            <input type="text" value=${dt.phone}  disabled=true name="pnp" id="pno-${dt._id}" placeholder="Phone no.">
+            <input type="text"  value=${dt.bgrop}  disabled=true name="bgrp" id="bgrp-${dt._id}" placeholder="Blood Group">
+            <input type="text" value=${dt.gender}  disabled=true name="gender" id="gender-${dt._id}" placeholder="Gender">
             <div class="butn">
-                <button class="edit" > Edit</button>
-                <button class="save" >Save</button>
+                <button class="edit" onclick="handleEdit('${dt._id}')" > Edit</button>
+                <button class="save" onclick="handleSave('${dt._id}')" >Save</button>
                 <button class="delete" onclick="handleDelete('${dt._id}')" >Delete</button>
             </div>
         </div>    
@@ -22,6 +22,26 @@ async function getdonors() {
 }
 
 getdonors();
+
+async function handleEdit(id) {
+    let name =document.getElementById(`name-${id}`);
+    name.disabled=false;
+    let email =document.getElementById(`email-${id}`);
+    email.disabled=false;
+    let pno =document.getElementById(`pno-${id}`);
+    pno.disabled=false;
+    let bgrp =document.getElementById(`bgrp-${id}`);
+    bgrp.disabled=false;
+    let gender =document.getElementById(`gender-${id}`);
+    gender.disabled=false;
+}
+
+async function handleSave(id) {
+    let name =document.getElementById(`name-${id}`);
+    let email =document.getElementById(`email-${id}`);
+    let pno =document.getElementById(`pno-${id}`);
+    let bgrp =document.getElementById(`bgrp-${id}`);
+}
 
 async function handleDelete(id){
     const res=await fetch("http://localhost:3000/delete",{
