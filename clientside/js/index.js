@@ -1,6 +1,8 @@
+let arr=[]
 async function getdonors() {
     const res=await fetch("http://localhost:3000/getdonors");
     const data=await res.json();
+
     str=``;
     data.map((dt)=>{
         str+=`
@@ -17,8 +19,10 @@ async function getdonors() {
             </div>
         </div>    
         `
+        arr.push(dt);
     });
     document.getElementById("main").innerHTML=str
+    console.log(arr);
 }
 
 getdonors();
@@ -79,3 +83,24 @@ async function handleDelete(id){
         alert("Deletion Failed")
     }
 }
+
+document.getElementById("filter").addEventListener('keyup',(e)=>{
+    str=``
+    arr.filter((i)=>i.name.toLowerCase().includes(e.target.value.toLowerCase())).map((donor)=>{
+        str+=`
+        <div class="content" >
+            <input type="text" value=${donor.name} disabled=true name="name" id="name-${donor._id}" placeholder="Name">
+            <input type="email" value=${donor.email}  disabled=true name="email" id="email-${donor._id}" placeholder="Email">
+            <input type="text" value=${donor.phone}  disabled=true name="pnp" id="pno-${donor._id}" placeholder="Phone no.">
+            <input type="text"  value=${donor.bgrop}  disabled=true name="bgrp" id="bgrp-${donor._id}" placeholder="Blood Group">
+            <input type="text" value=${donor.gender}  disabled=true name="gender" id="gender-${donor._id}" placeholder="Gender">
+            <div class="butn">
+                <button class="edit" onclick="handleEdit('${donor._id}')" > Edit</button>
+                <button class="save" onclick="handleSave('${donor._id}')" >Save</button>
+                <button class="delete" onclick="handleDelete('${donor._id}')" >Delete</button>
+            </div>
+        </div>    
+        `
+    })
+    document.getElementById("main").innerHTML=str;
+})

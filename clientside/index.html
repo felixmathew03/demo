@@ -16,7 +16,7 @@
             color: rgb(24, 1, 1);
             font-size: 24px;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
         }
         nav h2{
@@ -43,7 +43,13 @@
         }
         .butn{
             display: inline;
-            margin-left: 15px;
+        }
+        input{
+            height: 30px;
+            width: 200px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0px 4px 8px 2px rgba(49, 48, 48, 0.25), 0px 0px 0px 1px rgba(46, 43, 43, 0.08);
         }
         .content input{
             height: 25px;
@@ -119,15 +125,18 @@
         <h2>
             Blood Donors
         </h2>
-        
+        <div class="input">
+            <input type="text" name="filter" id="filter" placeholder="FILTER">
+        </div>
+        <div class="btn">
+            <a href="http://localhost:3000/adddonor">
+                <button class="button-32">
+                    Add Donors
+                </button>
+            </a>
+        </div>
     </nav>
-    <div class="btn">
-        <a href="http://localhost:3000/adddonor">
-            <button class="button-32">
-                Add Donors
-            </button>
-        </a>
-    </div>
+    
     <h2 align="center"><u>Details of Donors</u></h2>
     <div class="container" id="main">
         
